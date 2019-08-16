@@ -5,7 +5,7 @@
             <div class="header">
                 <van-row>
                     <van-col span="4" style="text-align:left;color:red">
-                        <router-link to="/home">
+                        <router-link to="/">
                             <van-icon style="margin:5px 0px 0px 5px;" class="returnHome" size="24px" name="arrow-left" />
                         </router-link>
                     </van-col>

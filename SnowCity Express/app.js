@@ -7,6 +7,7 @@ var logger = require('morgan');
 //使用的路由模块
 var appListRouter = require('./routes/appList');
 var appDetailRouter = require('./routes/detail');
+var appRegRouter = require('./routes/reg');
 
 var app = express();
 
@@ -20,7 +21,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/list',appListRouter);
-app.use('/detail',appDetailRouter)
+app.use('/detail',appDetailRouter);
+app.use('/reg',appRegRouter)
 
 
 

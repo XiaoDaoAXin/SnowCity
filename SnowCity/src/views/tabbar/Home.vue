@@ -213,7 +213,7 @@ export default {
           image:
             "http://www.mdjec.com/images/63/89/7d/1fa95e79ef9de68e429a96d84ef8123718b5e644.jpg",
           text: "热卖商品",
-          router: "HotShopList"
+          router: "/HotShopList"
         },
         {
           image:

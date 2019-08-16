@@ -1,7 +1,7 @@
 <template>
     <div class="detail">
         <div class="header">
-            <div class="left">
+            <div class="left" @click="to_hotShopList">
                 <van-icon name="arrow-left" />
             </div>
             <div class="right">
@@ -14,11 +14,11 @@
             <van-image width="100%" height="288" :src="this.image" />
 
             <!-- -------弹出框------------ -->
-            <van-action-sheet v-model="show" :actions="actions" @select="onSelect" />
+            <!-- <van-action-sheet v-model="show" :actions="actions" @select="onSelect" /> -->
 
             <!-- --------信息------------- -->
             <div class="xinxi">
-                <div class="dec">{{this.data.dec}}</div>
+                <div class="deci">{{this.data.dec}}</div>
                 <div class="bottom">
                     <span class="price">￥{{this.data.price}}</span>
                     <span class="num">已有{{this.data.num}}人购买</span>
@@ -95,6 +95,11 @@ export default {
       // 点击选项时默认不会关闭菜单，可以手动关闭
       this.show = false;
       Toast(item.name);
+    },
+    to_hotShopList(){
+      this.$router.push({
+        name:'hotshoplist'
+      })
     }
   },
 
@@ -159,7 +164,7 @@ export default {
 .xinxi {
   background-color: #fff;
   padding: 20px 10px 20px 10px;
-  .dec {
+  .deci {
     width: 80%;
     // height: 45px;
     font-size: 17px;

@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'my-icon';
+  src: url('./iconfont.ttf') format('truetype');
+}
+
+.my-icon {
+  font-family: "my-icon" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.my-icon-QQ:before {
+  content: "\e604";
+}
+
+.my-icon-weixin:before {
+  content: "\e617";
+}
+
+.my-icon-weixin1:before {
+  content: "\e66b";
+}
+
+.my-icon-weixin2:before {
+  content: "\e699";
+}
+
+.my-icon-qq:before {
+  content: "\e60f";
+}
+
+.my-icon-weixin3:before {
+  content: "\e615";
+}
+
+.my-icon-QQ1:before {
+  content: "\e600";
+}
+
+.my-icon-QQ2:before {
+  content: "\e656";
+}
+
+.my-icon-QQlogo:before {
+  content: "\e639";
+}
+
+.my-icon-weixin4:before {
+  content: "\e608";
+}
