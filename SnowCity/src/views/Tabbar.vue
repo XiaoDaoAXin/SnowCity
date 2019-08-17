@@ -1,6 +1,5 @@
 <template>
   <div class="box">
-   
 
     <!-- 把路由组件缓存到内存里面 -->
     <keep-alive>
@@ -8,12 +7,17 @@
     </keep-alive>
 
     <!-- -------底部导航标签------------ -->
-    <van-tabbar :route="true" v-model="active" active-color="orange">
-      <van-tabbar-item 
-       :icon="item.icon" 
-       v-for="(item,index) in  tabbarsItems" 
+    <van-tabbar
+      :route="true"
+      v-model="active"
+      active-color="orange"
+    >
+      <van-tabbar-item
+        :icon="item.icon"
+        v-for="(item,index) in  tabbarsItems"
         @click="navTo(item.url)"
-       :key="index">{{item.title}}</van-tabbar-item>
+        :key="index"
+      >{{item.title}}</van-tabbar-item>
     </van-tabbar>
 
   </div>
@@ -24,7 +28,7 @@ export default {
     return {
       //底部导航标签高亮索引
       active: 0,
-    tabbarsItems: [
+      tabbarsItems: [
         {
           title: "首页",
           // 路由名字
@@ -39,10 +43,9 @@ export default {
         },
         {
           title: "购物车",
-          url: "nullcar",
+          url: "car",
           icon: "shopping-cart-o"
-        }
-        ,
+        },
         {
           title: "会员",
           url: "user",
@@ -53,17 +56,17 @@ export default {
   },
 
   methods: {
-   //编程式导航
-   navTo(name){
-     this.$router.push({
-       name
-     })
-   }
+    //编程式导航
+    navTo(name) {
+      this.$router.push({
+        name
+      });
+    }
   }
 };
 </script>
 
-<style lang="scss">
+<style lang="scss"  >
 * {
   margin: 0px;
   padding: 0px;

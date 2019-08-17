@@ -21,7 +21,7 @@ import Home from '../views/tabbar/Home'
 const Detail = () => import('../views/Detail')
 
 //空购物车页
-const NullCar = () => import('../views/tabbar/NullCar')
+const Car = () => import('../views/tabbar/Car')
 
 //购物车页
 const HasCar = () => import('../views/tabbar/HasCar')
@@ -57,9 +57,9 @@ const routes = [{
             },
             //空购物车页
             {
-                name: 'nullcar',
-                path: "NullCar",
-                component: NullCar,
+                name: 'car',
+                path: "Car",
+                component: Car,
             },
             //购物车页
             {

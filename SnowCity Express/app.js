@@ -8,6 +8,8 @@ var logger = require('morgan');
 var appListRouter = require('./routes/appList');
 var appDetailRouter = require('./routes/detail');
 var appRegRouter = require('./routes/reg');
+var appCarRouter = require('./routes/car');
+
 
 var app = express();
 
@@ -22,7 +24,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/list',appListRouter);
 app.use('/detail',appDetailRouter);
-app.use('/reg',appRegRouter)
+app.use('/reg',appRegRouter);
+app.use('/car',appCarRouter);
 
 
 

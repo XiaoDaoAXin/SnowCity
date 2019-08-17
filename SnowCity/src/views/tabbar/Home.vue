@@ -231,7 +231,7 @@ export default {
           image:
             "http://www.mdjec.com/images/ee/62/c9/caa93c312d5294b88283c86caa5768775c2a9298.jpg",
           text: "购物车",
-          router: "shopCar"
+          router: "car"
         },
         {
           image:
